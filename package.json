@@ -1,0 +1,23 @@
+{
+  "name": "notes-mcp-server",
+  "version": "1.0.0",
+  "description": "An MCP server that lets AI assistants search, read and add to a folder of Markdown notes.",
+  "type": "module",
+  "bin": { "notes-mcp-server": "dist/server.js" },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "test": "tsx src/test-client.ts",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
